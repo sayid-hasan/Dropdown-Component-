@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.container {
+  max-width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(#f44226, #730228);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.selector {
+  width: 350px;
+}
+.selectorField {
+  width: 100%;
+  padding: 15px 20px;
+  border-radius: 6px;
+
+  background-color: rgba(255, 255, 255, 0.7);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.selectorField img {
+  width: 12px;
+}
+.rotate {
+  transform: rotate(180deg);
+}
+.List {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+  overflow: hidden;
+  border-radius: 6px;
+  margin-top: -10%;
+  opacity: 0;
+  transition: opacity 0.3s, margin-top 0.3s;
+}
+.List .option {
+  width: 100%;
+  padding: 15px 20px;
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  transition: background-color 0.1s;
+}
+.List .option:hover {
+  background-color: rgba(255, 255, 255);
+}
+.List .option img {
+  width: 25px;
+}
+.hide {
+  opacity: 1;
+  margin-top: 20px;
+  transition: opacity 0.3s, margin-top 0.3s;
+}
